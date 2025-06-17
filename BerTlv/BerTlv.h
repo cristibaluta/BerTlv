@@ -7,6 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BerTag.h"
+#import "BerTlv.h"
+#import "BerTlvBuilder.h"
+#import "BerTlvParser.h"
+#import "BerTlvErrors.h"
+#import "BerTlvs.h"
+#import "HexUtil.h"
 
 NS_ASSUME_NONNULL_BEGIN
 @class BerTag;
