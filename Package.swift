@@ -1,21 +1,26 @@
+// swift-tools-version:5.9
 import PackageDescription
 
 let package = Package(
     name: "BerTlv",
-    platforms: [.iOS(.v12), .macOS(.v10_15), .watchOS(.v7)],
-    products: [
-        .library(name: "BerTlv",
-                 targets: ["BerTlv"]
-        )
+    platforms: [
+        .iOS(.v12),
+        .watchOS(.v4)
     ],
-    dependencies: [],
+    products: [
+        .library(
+            name: "BerTlv",
+            targets: ["BerTlv"]
+        ),
+    ],
     targets: [
-        .target(name: "BerTlv",
-                path: "BerTlv",
-//                publicHeadersPath: ".",
-                cSettings: [
-                    .headerSearchPath(".")
-                ]
+        .target(
+            name: "BerTlv",
+            path: "BerTlv",
+            publicHeadersPath: ".",
+            cSettings: [
+                .headerSearchPath(".")
+            ]
         )
     ]
 )

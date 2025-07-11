@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "BerTag.h"
-#import "BerTlv.h"
 #import "BerTlvBuilder.h"
 #import "BerTlvParser.h"
 #import "BerTlvErrors.h"
